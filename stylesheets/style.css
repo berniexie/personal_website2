@@ -1,3 +1,197 @@
-body {
-  font-family: 'Roboto', sans-serif;
+/*General CSS Styling*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.2em;
+  margin: 0;
+  height: 100%;
+}
+
+hr {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*Navigation bar styling*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar img {
+  width: 350px;
+  padding: 1.5%;
+}
+
+.navbar ul {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.navbar a{
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #7777FF;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.navbar a:hover {
+  color: #7FAAFF;
+}
+
+/*Landing page styling*/
+.landing-page {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-image: url("../assets/images/shanghai_bund_blurred.jpg");
+  background-size: cover;
+}
+
+.jumbotron-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron {
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  min-width: 480px;
+  max-height: 600px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jumbotron hr {
+  margin: 0 5% 0 5%;
+}
+
+.jumbotron h1 {
+  color: #7777FF;
+  font-size: 5em;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 100;
+  text-align: center;
+  padding: 4% 7% 4% 7%;
+}
+
+.jumbotron h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 300;
+  padding: 5%;
+  text-align: center;
+}
+
+.school-info {
+  padding: 4%;
+}
+
+.school-info h3 {
+  font-weight: 200;
+  text-align: center;
+  padding: 1% 4% 1% 4%;
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2%;
+}
+
+.social-media a{
+  text-decoration: none;
+  padding: 1em;
+  color: #7777FF;
+}
+
+.scroll-down {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.scroll-down p {
+  color: white;
+  font-size: 1.2em;
+}
+
+.scroll-down img {
+  width: 30px;
+  height: 30px;
+}
+
+/*Introduction and resume page styling*/
+.introduction, .resume {
+  background-color: #555555;
+}
+
+.intro-block, .resume-block {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: #444444;
+  padding: 3% 5% 3% 5%;
+}
+
+.intro-title, .resume-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-title img {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.intro-title h1, .resume-title  h1 {
+  color: #7777FF;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 3.5em;
+  font-weight: 100;
+  text-align: center;
+}
+
+.intro-title img {
+  padding: 4%;
+}
+
+.intro-content p {
+  letter-spacing: 0em;
+  font-weight: 200;
+  color: white;
+}
+
+/*Resume exclusive styling*/
+.resume-block hr {
+  margin-bottom: 5%;
 }
