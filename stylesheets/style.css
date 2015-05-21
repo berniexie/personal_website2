@@ -13,11 +13,6 @@ html, body {
   height: 100%;
 }
 
-hr {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
 /*Navigation bar styling*/
 .navbar {
   background-color: rgba(0, 0, 0, 0.7);
@@ -79,6 +74,7 @@ hr {
   background-color: rgba(0, 0, 0, 0.7);
   width: 50%;
   min-width: 480px;
+  min-height: 400px;
   max-height: 600px;
   margin-top: 5%;
   display: flex;
@@ -122,6 +118,7 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 2%;
 }
 
@@ -158,11 +155,11 @@ hr {
 .intro-block, .resume-block {
   margin-left: 20%;
   margin-right: 20%;
-  background-color: #444444;
+  background-color: #333333;
   padding: 3% 5% 3% 5%;
 }
 
-.intro-title, .resume-title{
+.intro-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,7 +170,7 @@ hr {
   max-height: 500px;
 }
 
-.intro-title h1, .resume-title  h1 {
+.intro-title h1, .resume-block  h1 {
   color: #7777FF;
   font-family: Helvetica Neue, sans-serif;
   font-size: 3.5em;
@@ -192,6 +189,59 @@ hr {
 }
 
 /*Resume exclusive styling*/
-.resume-block hr {
-  margin-bottom: 5%;
+.resume-block {
+  background-color: #444444;
 }
+
+.resume-block hr {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.resume-block h2 {
+  color: white;
+  font-weight: 200;
+  padding-top: 1em;
+}
+
+.resume-block h3 {
+  color: #7777FF;
+  font-size: 1.2em;
+}
+
+.resume-block h4 {
+  color: white;
+  font-size: 1.1em;
+}
+
+.resume-block img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.education-row, .job-row , .position-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.education-title, .job-title , .position-title{
+  padding-top: 1em;
+}
+
+.course-work, .job-description, .position-description {
+  color: white;
+  padding-top: 0.5em;
+  padding-bottom: 2em;
+}
+
+.course-work ul{
+  padding: 0 3% 0 3%;
+}
+
+/*Projects Section*/
