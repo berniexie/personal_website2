@@ -148,11 +148,11 @@ html, body {
 }
 
 /*Introduction and resume page styling*/
-.introduction, .resume {
+.introduction, .resume , .projects{
   background-color: #555555;
 }
 
-.intro-block, .resume-block {
+.intro-block, .resume-block , .projects-block{
   margin-left: 20%;
   margin-right: 20%;
   background-color: #333333;
@@ -170,7 +170,7 @@ html, body {
   max-height: 500px;
 }
 
-.intro-title h1, .resume-block  h1 {
+.intro-title h1, .resume-block  h1 , .projects-block h1{
   color: #7777FF;
   font-family: Helvetica Neue, sans-serif;
   font-size: 3.5em;
@@ -188,12 +188,12 @@ html, body {
   color: white;
 }
 
-/*Resume exclusive styling*/
+/*Resume (and some projects) styling*/
 .resume-block {
   background-color: #444444;
 }
 
-.resume-block hr {
+.resume-block hr, .projects-block hr {
   border: 0;
   border-bottom: 1px dashed #ccc;
 }
@@ -209,7 +209,7 @@ html, body {
   font-size: 1.2em;
 }
 
-.resume-block h4 {
+.resume-block h4, .projects-block h4{
   color: white;
   font-size: 1.1em;
 }
@@ -219,7 +219,7 @@ html, body {
   max-height: 50px;
 }
 
-.education-row, .job-row , .position-row{
+.education-row, .job-row , .position-row, .projects-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -230,11 +230,11 @@ html, body {
   padding-bottom: 0.5em;
 }
 
-.education-title, .job-title , .position-title{
+.education-title, .job-title , .position-title, .projects-title{
   padding-top: 1em;
 }
 
-.course-work, .job-description, .position-description {
+.course-work, .job-description, .position-description, .projects-description{
   color: white;
   padding-top: 0.5em;
   padding-bottom: 2em;
@@ -245,3 +245,52 @@ html, body {
 }
 
 /*Projects Section*/
+.projects-block {
+  background-color: #333333;
+}
+
+.projects-block a {
+  color: white;
+}
+
+.projects-block h2 {
+  color: #7777FF;
+  font-weight: 200;
+  padding-top: 1em;
+}
+
+/*Footer Styling*/
+.footer {
+  background-color: #666666;
+  padding: 5em;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  text-decoration: none;
+  padding: 2em;
+  font-weight: 200;
+  color: white;
+}
+
+.footer a:hover{
+  color: #7777FF;
+}
+
+/*For responsiveness*/
+@media (max-width: 720px) {
+  .intro-block, .resume-block , .projects-block{
+    margin: 0;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
