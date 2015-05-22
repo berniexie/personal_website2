@@ -3,7 +3,9 @@ $(window).load(function(){
   //$("#active-link").focus();
 
   //jumbotron display
-  $(".jumbotron").addClass('animated slideInLeft');
+  if (screen.width > 720) {
+    $(".jumbotron").addClass('animated slideInLeft');
+  }
   $(".jumbotron").css('visibility', 'visible');
 
   //scroll-down
