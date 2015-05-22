@@ -9,8 +9,12 @@ html, body {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 200;
   letter-spacing: 0.2em;
+  position: relative;
   margin: 0;
+  padding: 0;
   height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /*Navigation bar styling*/
@@ -115,8 +119,10 @@ html, body {
 
 .social-media {
   display: flex;
+  text-align: center;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   padding: 2%;
 }
@@ -137,11 +143,13 @@ html, body {
 }
 
 .scroll-down p {
+  position: relative;
   color: white;
   font-size: 1.2em;
 }
 
 .scroll-down img {
+  position: relative;
   width: 30px;
   height: 30px;
 }
@@ -229,14 +237,18 @@ html, body {
   padding-bottom: 0.5em;
 }
 
-.education-title, .job-title , .position-title, .projects-title{
+.education-title, .job-title , .position-title, .projects-title {
   padding-top: 1em;
 }
 
-.course-work, .job-description, .position-description, .projects-description{
+.course-work, .job-description, .position-description, .projects-description {
   color: white;
   padding-top: 0.5em;
   padding-bottom: 2em;
+}
+
+.course-work p, .job-description p, .position-description p, .projects-description p{
+  letter-spacing: 0.1em;
 }
 
 .course-work ul{
@@ -309,10 +321,13 @@ html, body {
   .navbar a {
     font-size: 0.7em;
   }
-
 }
 
 @media (max-width: 480px) {
+  * {
+    letter-spacing: 0.1em;
+  }
+
   .jumbotron {
     margin: 0;
     width: 100%;
@@ -325,5 +340,14 @@ html, body {
 
   .intro-title h1, .resume-block  h1 , .projects-block h1{
     font-size: 2.5em;
+  }
+
+  .social-media {
+    padding-top: 5%;
+  }
+
+  .social-media a {
+    font-size: 2em;
+    padding: 0;
   }
 }
