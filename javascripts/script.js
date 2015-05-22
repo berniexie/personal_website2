@@ -1,7 +1,4 @@
 $(window).load(function(){
-  //navbar functionality
-  //$("#active-link").focus();
-
   //jumbotron display
   if (screen.width > 720) {
     $(".jumbotron").addClass('animated slideInLeft');
