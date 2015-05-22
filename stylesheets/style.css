@@ -347,7 +347,7 @@ html, body {
   }
 
   .jumbotron h1 {
-    font-size: 3em; 
+    font-size: 2.7em; 
   }
 
   .jumbotron h2 {
@@ -397,6 +397,8 @@ html, body {
 
   .social-media {
     padding-top: 5%;
+    flex-direction: column;
+    -webkit-flex-direction: column;
   }
 
   .social-media a {
