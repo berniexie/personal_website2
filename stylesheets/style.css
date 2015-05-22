@@ -406,3 +406,29 @@ html, body {
     padding: 0;
   }
 }
+
+/*For media inquiries of an iphone sideways*/
+@media (max-height: 480px) {
+  .navbar {
+    display: none;
+  }
+
+  .jumbotron {
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+    margin-top: 0;
+  }
+
+  .jumbotron h2 {
+    padding: 3%;
+  }
+
+  .social-media {
+    padding-bottom: 70px;
+  }
+
+  .school-info {
+    padding: 1%;
+  }
+}
