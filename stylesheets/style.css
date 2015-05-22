@@ -263,12 +263,11 @@ html, body {
 .education-row, .job-row , .position-row, .projects-row {
   display: -webkit-flex;
   -webkit-flex-direction: row;
-  -webkit-flex-wrap: wrap;
   -webkit-align-items: center;
   -webkit-justify-content: space-between;
+
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   color: white;
@@ -319,6 +318,8 @@ html, body {
   display: -webkit-flex;
   -webkit-flex-direction: row;
   -webkit-justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-flex-wrap: wrap;
 
   display: flex;
   flex-direction: row;
@@ -383,6 +384,15 @@ html, body {
 
   .intro-title h1, .resume-block  h1 , .projects-block h1{
     font-size: 2.5em;
+  }
+
+  .education-row, .job-row , .position-row, .projects-row {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  .education-title h3, .job-title h3, .position-title h3, .projects-title h3 {
+    text-align: right;
   }
 
   .social-media {
