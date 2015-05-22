@@ -20,6 +20,11 @@ html, body {
 /*Navigation bar styling*/
 .navbar {
   background-color: rgba(0, 0, 0, 0.7);
+
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-align-items: center;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -39,6 +44,10 @@ html, body {
   padding: 0;
   width: 100%;
   list-style: none;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: flex-end;
+
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -69,6 +78,9 @@ html, body {
 .jumbotron-wrapper {
   height: 100%;
   width: 100%;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+
   display: flex;
   justify-content: center;
 }
@@ -80,6 +92,10 @@ html, body {
   min-width: 300px;
   height: 600px;
   margin-top: 5%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: center;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,13 +134,19 @@ html, body {
 }
 
 .social-media {
-  display: flex;
   text-align: center;
+  padding: 2%;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-flex-wrap: wrap;
+
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2%;
 }
 
 .social-media a{
@@ -173,6 +195,10 @@ html, body {
 }
 
 .intro-title {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -235,6 +261,11 @@ html, body {
 }
 
 .education-row, .job-row , .position-row, .projects-row {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -webkit-align-items: center;
+  -webkit-justify-content: space-between;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -285,6 +316,10 @@ html, body {
 }
 
 .footer .footer-row {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -webkit-justify-content: space-between;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
