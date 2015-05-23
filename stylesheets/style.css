@@ -422,6 +422,11 @@ html, body {
 
   .jumbotron h2 {
     padding: 3%;
+    font-size: 1.5em;
+  }
+
+  .school-info h3 {
+    font-size: 0.5em; 
   }
 
   .social-media {
