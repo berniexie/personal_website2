@@ -1,2 +1,2 @@
-# personal_website2
-## Second edition of my personal website
+# Bernard Xie's Personal Website
+## www.bernardxie.com
