@@ -289,7 +289,7 @@ html, body {
   letter-spacing: 0.1em;
 }
 
-.course-work ul{
+.course-work ul, .job-description ul{
   padding: 0 3% 0 3%;
 }
 
